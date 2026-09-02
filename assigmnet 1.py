@@ -56,4 +56,4 @@ print("new dictionary after updating name is",dict1)
 del dict1["soham"]
 print("new dictionary after removing name is",dict1)
 
-
+                        ###### THANK YOU  #######
