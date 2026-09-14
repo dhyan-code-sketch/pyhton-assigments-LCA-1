@@ -16,3 +16,5 @@ b = float(input("Enter second side: "))
 c = float(input("Enter third side: "))
 
 right_triangle(a, b, c)
+
+                            ###THANK YOU###
