@@ -1,24 +1,18 @@
-def is_right_triangle(a, b, c):
+def right_triangle(a, b, c):
     # first arrange the sides so the biggest one is last
     sides = [a, b, c]
     sides.sort()
-    x, y, z = sides
 
     # right angle triangle rule -> x*x + y*y = z*z
-    if x*x + y*y == z*z:
-        return True
+    if sides[0]**2 +sides[1]**2 == sides[2]**2:
+        print("it is a right angeled triangle")
     else:
-        return False
+        print("it is not a right angeled triangle")
 
 
 # taking input from user
-s1 = float(input("Enter first side: "))
-s2 = float(input("Enter second side: "))
-s3 = float(input("Enter third side: "))
+a = float(input("Enter first side: "))
+b = float(input("Enter second side: "))
+c = float(input("Enter third side: "))
 
-result = is_right_triangle(s1, s2, s3)
-
-if result:
-    print("Yes, it is a right angle triangle")
-else:
-    print("No, it is not a right angle triangle")
+right_triangle(a, b, c)
